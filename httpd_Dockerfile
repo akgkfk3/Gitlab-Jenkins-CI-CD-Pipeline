@@ -1,0 +1,8 @@
+FROM httpd:latest
+RUN apt-get update -y
+RUN apt-get install -y git
+WORKDIR /usr/local/apache2/htdocs
+RUN rm -rf *
+RUN git clone https://gitlab.shucloud.site/root/test.git .
+EXPOSE 80
+CMD httpd -DFOREGROUND

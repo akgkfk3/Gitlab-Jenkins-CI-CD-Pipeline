@@ -1,0 +1,15 @@
+pipeline {
+    agent any
+      stages {
+          stage('image build'){
+              steps {
+			      sh 'docker build -t web:0.2 -f httpd_Dockerfile .'
+              }
+          }
+          stage('deploy'){
+              steps {
+				  sh 'docker service update --image web:0.2 MyStack_Web'
+              }
+          }
+      }
+}
