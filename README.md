@@ -30,7 +30,7 @@
 
 <br/>
 
-<b>1. Gitlab 설치</b>
+<b>1. Gitlab 설치 (Rocky Linux 8)</b>
 
 - Add Gitlab CE Repository
 
@@ -74,7 +74,7 @@ gitlab-ctl reconfigure
 cat /etc/gitlab/initial_root_password
 ```
 
-<b>2. Jenkins 설치</b>
+<b>2. Jenkins 설치 (Rocky Linux 8)</b>
 
 - Install Java
 
@@ -112,7 +112,7 @@ cat /var/lib/jenkins/secrets/initialAdminPassword
 
 <br/>
 
-<b>1. Docker 설치</b>
+<b>1. Docker 설치 (Rocky Linux 8)</b>
 
 - Add Docker Repository
 
